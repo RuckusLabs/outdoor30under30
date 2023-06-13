@@ -3,8 +3,7 @@ import { Parallax } from 'react-parallax';
 import WinnerList from './winners-list';
 import style from './style.css';
 
-
-const Home = () => {
+export default function Home() {
 	return (
 		<>
 			<section class="splash">
@@ -33,21 +32,6 @@ const Home = () => {
 				<p>This project wouldn't be possible without the support of many organizations. Each sponsor helped us create and curate content, make connections, and importantly, promote the project, enabling us reach a large audience and tell a complete story.</p>
 				<p>To show our gratitude, we've listed them below.</p>
 			</section>
-			<footer>
-				<p>Question or comments? Email us!</p>
-				<p>This project was created by friends with the intent to inspire exploration.</p>
-			</footer>
 		</>
 	);
 };
-
-const Resource = props => {
-	return (
-		<a href={props.link} class={style.resource}>
-			<h2>{props.title}</h2>
-			<p>{props.description}</p>
-		</a>
-	);
-};
-
-export default Home;
