@@ -1,12 +1,13 @@
 import { h } from 'preact';
 import { Parallax } from 'react-parallax';
-import WinnerList from './winners-list';
+import WinnersList from './winners-list';
+import WinnersCarousel from "./winners-carousel";
 import style from './style.css';
 
 export default function Home() {
 	return (
 		<>
-			<section class="splash">
+			<section class={style.splash}>
 				<h1 class="a11y-hidden">Outdoor 30 Under 30</h1>
 				<h2>The Outdoor Industry's Brightest Young Minds</h2>
 			</section>
@@ -18,9 +19,10 @@ export default function Home() {
 			<section>
 				<h2>2016 Winners</h2>
 				<p>Proudly announcing the inagural 30 winners</p>
+				<WinnersCarousel />
 			</section>
 			<section>
-				<WinnerList />
+				<WinnersList />
 				<p>All winners were selected by the panel of judges and under the age of 30 as of February 1st, 2016.</p>
 			</section>
 			<section>
