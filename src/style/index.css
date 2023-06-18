@@ -1,18 +1,15 @@
-:root {
-	/* font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@import "colors.css";
+@import "typography";
 
-	color-scheme: light dark;
-	color: #444;
-	background: #fafafa; */
+:root {
+	/* color-scheme: light dark; */
+	/* color: var(--black); */
 }
 
 @media (prefers-color-scheme: dark) {
 	/* :root {
 		color: #fff;
-		background: #1c1c1c;
+		
 	} */
 }
 
