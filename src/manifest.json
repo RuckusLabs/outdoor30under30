@@ -1,11 +1,11 @@
 {
   "name": "Outdoor 30 Under 30",
-  "short_name": "30 Under 30",
+  "short_name": "Outdoor 30/30",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#013300",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
