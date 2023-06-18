@@ -1,0 +1,19 @@
+.sponsors {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.sponsors li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sponsors img {
+  width: 100%;
+  max-width: 350px;
+  padding: 50px;
+  box-sizing: border-box;
+}
