@@ -1,23 +1,20 @@
+import { h } from 'preact';
 import { Router } from 'preact-router';
+
+import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
-import Sponsors from "../routes/sponsors";
-import Applications from '../routes/applications';
-import Sponsorship from '../routes/sponsorship';
-import ThirtyList from '../routes/thirtyList';
+import Profile from '../routes/profile';
 
 const App = () => (
 	<div id="app">
+		<Header />
 		<main>
 			<Router>
-				<h2>Test</h2>
 				<Home path="/" />
-				<ThirtyList path="/outdoor-30-under-30-list" />
-				<Sponsors path="/outdoor-30-under-30-sponsors" />
-
-				<Applications path="apply-to-outdoor-30-under-30" />
-				<Sponsorship path="/outdoor-30-under-30-sponsorship" />
+				<Profile path="/profile/" user="me" />
+				<Profile path="/profile/:user" />
 			</Router>
 		</main>
 	</div>

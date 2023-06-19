@@ -1,4 +1,4 @@
-# outdoor30under30
+# outd30r
 
 ## CLI Commands
 
