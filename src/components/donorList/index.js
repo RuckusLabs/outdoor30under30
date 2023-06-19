@@ -1,4 +1,4 @@
-import style from "./style.css";
+import style from "./index.css";
 
 export default function DonorList() {
   return (
