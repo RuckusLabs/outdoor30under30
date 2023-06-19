@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { Router } from 'preact-router';
 
 import Navigation from './navigation';
+import Footer from './footer';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
@@ -9,7 +10,7 @@ import TheList from '../routes/theList';
 import Sponsors from '../routes/sponsors';
 import Applications from '../routes/applications';
 import Sponsorships from '../routes/sponsorships';
-import Footer from '../footer';
+
 
 const App = () => (
 	<div id="app">
