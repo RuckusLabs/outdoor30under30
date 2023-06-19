@@ -6,11 +6,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
+  color: white;
 }
 
 a {
   color: white;
-  text-decoration: underline;
+  box-shadow: inset 1px 1px 1px var(--orange);
 }
 
 h1, h2, h3, p, a, span {
