@@ -1,3 +1,33 @@
 body {
   background: var(--brown);
 }
+
+#app {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  margin-right: auto;
+  grid-template-areas:
+    'nav main'
+    'nav main'
+    'nav footer';
+}
+
+main {
+  grid-area: main;
+  margin-top: 150px;
+  padding: 50px;
+}
+
+main h2 {
+  border-top: 1px solid var(--orange);
+  padding-top: 25px;
+}
+
+body {
+  background-image: url('../../src/assets/images/background-outd30r.svg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 50%;
+}
