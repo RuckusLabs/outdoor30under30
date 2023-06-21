@@ -11,23 +11,44 @@
 
 a {
   color: white;
-  box-shadow: inset 1px 1px 1px var(--orange);
+  text-decoration: underline;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:hover::after {
+  content: '';
+  height: 7px;
+  width: 100%;
+  background-color: var(--orange);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 h1, h2, h3, p, a, span {
   margin: 0;
   padding: 0;
+  line-height: 1.25;
 }
 
 h2+p {
   margin-top: 25px;
 }
 
-a, p {
+p {
   width: 100%;
   max-width: 600px;
 }
 
 p+p {
   margin-top: 25px;
+}
+
+.highlight {
+  color: var(--orange);
 }
