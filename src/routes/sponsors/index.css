@@ -1,3 +1,13 @@
-.heading {
-  color: orange;
+.sponsorsGrid {
+  margin-top: 50px;
+  display: grid;
+  gap: 50px;
+}
+
+.sponsorsGrid img {
+  max-width: 250px;
+}
+
+.sponsorsGrid a::after {
+  content: none;
 }

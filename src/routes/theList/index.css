@@ -1,3 +1,54 @@
-.heading {
-  color: red;
+.winnerList {
+  margin-top: 50px;
+  position: relative;
+  left: -15px;
+}
+
+.winnerList p {
+  margin: 0;
+  max-width: 100%;
+}
+
+.winnerProfileContainer {
+  display: none;
+}
+
+.winnerList li {
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.winnerList li+li {
+  margin-top: 15px;
+}
+
+.winnerList li:hover {
+  box-shadow: inset 0px 0px 0px 1px var(--orange);
+}
+
+.winnerProfileContainer {
+  background: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.winnerList li:hover .winnerProfileContainer {
+  display: block;
+  position: absolute;
+  right: -200px;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.winnerProfile {
+  mix-blend-mode: hard-light;
+  width: 100%;
+}
+
+.winnerCompany {
+  font-style: italic;
 }

@@ -7,8 +7,8 @@ import Logo from "../../assets/outd30r-logo.svg";
 const Navigation = () => (
 	<header>
 		<nav class={style.nav}>
-			<Link href="/">
-				<img class={style.logo} src={Logo} alt="Outdoor 30 Under 30" />
+			<Link class={style.logo} href="/">
+				<img src={Logo} alt="Outdoor 30 Under 30" />
 				<h1 class={style['a11y-hidden']}>Outdoor 30 Under 30</h1>
 			</Link>
 			<Link activeClassName={style.active} href="/">
@@ -20,7 +20,7 @@ const Navigation = () => (
 			<Link activeClassName={style.active} href="/outdoor-30-under-30-sponsors">
 				Sponsors
 			</Link>
-
+			<div className={style.separator} />
 			<Link className={style.applications} activeClassName={style.active} href="/outdoor-30-under-30-application">
 				2024 Applications
 			</Link>
