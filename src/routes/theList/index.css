@@ -16,7 +16,7 @@
 .winnerList li {
   padding: 15px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .winnerList li+li {
@@ -32,7 +32,7 @@
   border: 1px solid var(--orange);
 }
 
-.winnerList li:hover .winnerProfileContainer {
+.winnerList li.active .winnerProfileContainer {
   display: block;
   position: absolute;
   right: -200px;
@@ -51,4 +51,30 @@
 
 .winnerCompany {
   font-style: italic;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .winnerList {
+    margin-top: 50px;
+    position: static;
+  }
+
+  .winnerList li {
+    position: static;
+  }
+
+  .winnerProfileContainer {
+    background: var(--orange);
+    border: none;
+  }
+
+  .winnerList li:hover .winnerProfileContainer {
+    display: block;
+    position: static;
+    width: 100%;
+    height: auto;
+    top: initial;
+    transform: none;
+    margin-top: 15px;
+  }
 }
