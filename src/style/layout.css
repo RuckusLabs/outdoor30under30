@@ -1,5 +1,14 @@
 body {
   background: var(--brown);
+  background-image: url('../../src/assets/images/background-outd30r.svg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 50%;
+}
+
+body.fixed {
+  position: fixed;
 }
 
 #app {
@@ -24,10 +33,18 @@ main h2 {
   padding-top: 25px;
 }
 
-body {
-  background-image: url('../../src/assets/images/background-outd30r.svg');
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center center;
-  background-size: 50%;
+@media (min-width: 320px) and (max-width: 1024px) {
+
+  #app {
+    grid-template-areas:
+      'nav'
+      'main'
+      'footer';
+  }
+
+  main {
+    margin-top: 0;
+    padding: 25px;
+    padding-top: 0;
+  }
 }
