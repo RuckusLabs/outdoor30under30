@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"7coQ":function(n,o,e){"use strict";e.r(o),function(n,s){e("LIOS");o.default=function(){return n(s,null,n("h2",null,"Become a Sponsor"),n("p",null,"Believe in the cause? Here's how to become a sponsor for ",n("span",{class:"highlight"},"Outdoor 30 Under 30"),"."))}}.call(this,e("hosL").h,e("hosL").Fragment)},LIOS:function(){"use strict"}}]);
+//# sourceMappingURL=route-sponsorships.chunk.8595b.js.map
