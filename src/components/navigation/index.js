@@ -14,10 +14,21 @@ const Navigation = () => {
 		document.querySelector('body').classList.toggle('fixed');
 	}
 
+	function removeBodyFixed() {
+		document.querySelector('body').classList.remove('fixed');
+	}
+
+	function handleMobileToggle() {
+		setMenuActive(prevState => !prevState);
+		setMenuText(prevState => !prevState);
+		removeBodyFixed();
+		toggleBodyFixed();
+	}
+
 	function handleMenuClick() {
 		setMenuActive(prevState => !prevState);
 		setMenuText(prevState => !prevState);
-		toggleBodyFixed();
+		removeBodyFixed();
 	}
 
 	return (
@@ -28,7 +39,7 @@ const Navigation = () => {
 						<img src={Logo} alt="Outdoor 30 Under 30" />
 						<h1 class={style['a11y-hidden']}>Outdoor 30 Under 30</h1>
 					</Link>
-					<a onClick={handleMenuClick} class={style["menu-toggle"]} href="#">{menuText ? 'Close Menu' : 'Menu'}</a>
+					<a onClick={handleMobileToggle} class={style["menu-toggle"]} href="#">{menuText ? 'Close Menu' : 'Menu'}</a>
 				</div>
 				<Link onClick={handleMenuClick} activeClassName={style.active} href="/">
 					Mission
