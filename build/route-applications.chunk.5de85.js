@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{"+ujt":function(n,o,t){"use strict";t.r(o),function(n,l){t("RbW2");o.default=function(){return n(l,null,n("h2",null,"Applications (2024)"),n("p",null,"Want to be considered for the 2024 Outdoor 30 Under 30 list? Simply submit the form below and we'll get back to you as quickly as possible."))}}.call(this,t("hosL").h,t("hosL").Fragment)},RbW2:function(){}}]);
-//# sourceMappingURL=route-applications.chunk.5de85.js.map
