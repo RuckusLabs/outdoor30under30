@@ -39,6 +39,10 @@ header {
 	content: none;
 }
 
+.navHeader {
+	margin-bottom: 25px;
+}
+
 .nav .separator {
 	border-right: 1px solid var(--orange);
 	margin: 25px 0;
@@ -67,6 +71,7 @@ header {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		margin-bottom: 0;
 	}
 
 	.nav.open {
