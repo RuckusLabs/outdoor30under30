@@ -45,6 +45,7 @@ export default function Home() {
 				<img onClick={closeModal} className={modalStyle.close} src={xCircle} />
 				<h2>Apply for 2024!</h2>
 				<p>Want to be considered for the 2024 Outdoor 30 Under 30 list? Simply submit the form below and we'll get back to you as quickly as possible.</p>
+				<div data-tf-widget="bP5CRWPh" class={modalStyle.typeform} data-tf-opacity="100" data-tf-iframe-props="title=Outdoor 30 Under 30 Award Application Form" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 			</Modal>
 			<div className={bannerStyle.banner}>
 				<h3 onClick={openModal}>Apply for 2024</h3>
@@ -86,7 +87,7 @@ export default function Home() {
 				<h2>Proudly Presented By</h2>
 				<p>This project wouldn't be possible without the support of organizations. Sponsors help us create and curate content, make connections, and importantly, promote the project, enabling us reach a large audience and tell a complete story.</p>
 				<DonorList />
-				<p><a href="#">Want to support us? Become a donor!</a></p>
+				<p><a href="#">Want to support this project? Become a sponsor</a></p>
 			</section>
 		</>
 	);
