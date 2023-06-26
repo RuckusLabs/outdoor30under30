@@ -45,7 +45,7 @@ export default function Home() {
 				<img onClick={closeModal} className={modalStyle.close} src={xCircle} />
 				<h2>Apply for 2024!</h2>
 				<p>Want to be considered for the 2024 Outdoor 30 Under 30 list? Simply submit the form below and we'll get back to you as quickly as possible.</p>
-				<div data-tf-widget="bP5CRWPh" class={modalStyle.typeform} data-tf-opacity="100" data-tf-iframe-props="title=Outdoor 30 Under 30 Award Application Form" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+				<div data-tf-widget="bP5CRWPh" class={modalStyle.typeform} data-tf-opacity="100" data-tf-iframe-props="title=Outdoor 30 Under 30 Award Application Form" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;"></div><script src="https://embed.typeform.com/next/embed.js"></script>
 			</Modal>
 			<div className={bannerStyle.banner}>
 				<h3 onClick={openModal}>Apply for 2024</h3>
@@ -91,4 +91,4 @@ export default function Home() {
 			</section>
 		</>
 	);
-};
+}
